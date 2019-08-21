@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TU1.Login" time="11" tests="2" failures="0" errors="0">
+   <testsuite name="TU1.Login" tests="2" failures="0" errors="0" time="11" timestamp="2019-08-21 07:37:38" hostname="rajagusri - Gusri" id="Test Suites/TU1.Login">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\rajagusri\\Katalon Studio\\Katalon Demo Web\\Reports\\TU1.Login\\20190821_073732"/>
+         <property name="logFiles" value="C:\\Users\\rajagusri\\Katalon Studio\\Katalon Demo Web\\Reports\\TU1.Login\\20190821_073732\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="rajagusri - Gusri"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 76.0.3809.100"/>
+         <property name="hostAddress" value="192.168.87.1"/>
+         <property name="sessionId" value="9ad43b18a2eed469475aae350a839352"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login" classname="Test Cases/Login" status="PASSED">
+         <system-out><![CDATA[2019-08-21 07:37:38 - [TEST_CASE][PASSED] - Test Cases/Login: Test Cases/Login
+
+2019-08-21 07:37:39 - [TEST_STEP][PASSED] - openBrowser(urlLogin): Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/profile.php#login'
+
+2019-08-21 07:37:39 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-21 07:37:39 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-08-21 07:37:47 - [MESSAGE][PASSED] - Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/profile.php#login'
+
+2019-08-21 07:37:47 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-08-21 07:37:48 - [MESSAGE][PASSED] - Current window maximized
+
+2019-08-21 07:37:48 - [TEST_STEP][PASSED] - setText(findTestObject("input_Username_username"), username): Text 'John Doe' is set on object 'Object Repository/input_Username_username'
+
+2019-08-21 07:37:48 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/input_Username_username'
+
+2019-08-21 07:37:48 - [TEST_STEP][PASSED] - setText(findTestObject("input_Password_password"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/input_Password_password'
+
+2019-08-21 07:37:48 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/input_Password_password'
+
+2019-08-21 07:37:48 - [TEST_STEP][PASSED] - click(findTestObject("button_Login")): Object: 'Object Repository/button_Login' is clicked on
+
+2019-08-21 07:37:49 - [MESSAGE][PASSED] - Object: 'Object Repository/button_Login' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/VerifySetelahLogin" classname="Test Cases/VerifySetelahLogin" status="PASSED">
+         <system-out><![CDATA[2019-08-21 07:37:49 - [TEST_CASE][PASSED] - Test Cases/VerifySetelahLogin: Test Cases/VerifySetelahLogin
+
+2019-08-21 07:37:49 - [TEST_STEP][PASSED] - recent_url = getUrl(): Current window's url is: 'https://katalon-demo-cura.herokuapp.com/#appointment'
+
+2019-08-21 07:37:49 - [MESSAGE][PASSED] - Current window's url is: 'https://katalon-demo-cura.herokuapp.com/#appointment'
+
+2019-08-21 07:37:49 - [TEST_STEP][PASSED] - verifyMatch(recent_url, "https://katalon-demo-cura.herokuapp.com/#appointment", false): Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/#appointment' are matched 
+
+2019-08-21 07:37:49 - [MESSAGE][PASSED] - Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/#appointment' are matched]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-08-21 07:37:38 - [TEST_SUITE][PASSED] - TU1.Login: Test Cases/VerifySetelahLogin]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

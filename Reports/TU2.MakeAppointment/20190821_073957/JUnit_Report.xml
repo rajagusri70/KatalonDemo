@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TU2.MakeAppointment" time="11" tests="2" failures="1" errors="0">
+   <testsuite name="TU2.MakeAppointment" tests="2" failures="1" errors="0" time="11" timestamp="2019-08-21 07:40:05" hostname="rajagusri - Gusri" id="Test Suites/TU2.MakeAppointment">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\rajagusri\\Katalon Studio\\Katalon Demo Web\\Reports\\TU2.MakeAppointment\\20190821_073957"/>
+         <property name="logFiles" value="C:\\Users\\rajagusri\\Katalon Studio\\Katalon Demo Web\\Reports\\TU2.MakeAppointment\\20190821_073957\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="rajagusri - Gusri"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 76.0.3809.100"/>
+         <property name="hostAddress" value="192.168.87.1"/>
+         <property name="sessionId" value="56dd6ec3178b6982cd96d165cc7ad0d1"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login" classname="Test Cases/Login" status="PASSED">
+         <system-out><![CDATA[2019-08-21 07:40:05 - [TEST_CASE][PASSED] - Test Cases/Login: Test Cases/Login
+
+2019-08-21 07:40:06 - [TEST_STEP][PASSED] - openBrowser(urlLogin): Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/profile.php#login'
+
+2019-08-21 07:40:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-21 07:40:06 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-08-21 07:40:13 - [MESSAGE][PASSED] - Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/profile.php#login'
+
+2019-08-21 07:40:13 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-08-21 07:40:14 - [MESSAGE][PASSED] - Current window maximized
+
+2019-08-21 07:40:14 - [TEST_STEP][PASSED] - setText(findTestObject("input_Username_username"), username): Text 'John Doe' is set on object 'Object Repository/input_Username_username'
+
+2019-08-21 07:40:14 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/input_Username_username'
+
+2019-08-21 07:40:14 - [TEST_STEP][PASSED] - setText(findTestObject("input_Password_password"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/input_Password_password'
+
+2019-08-21 07:40:14 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/input_Password_password'
+
+2019-08-21 07:40:14 - [TEST_STEP][PASSED] - click(findTestObject("button_Login")): Object: 'Object Repository/button_Login' is clicked on
+
+2019-08-21 07:40:15 - [MESSAGE][PASSED] - Object: 'Object Repository/button_Login' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/MakeAppointment" classname="Test Cases/MakeAppointment" status="PASSED">
+         <system-out><![CDATA[2019-08-21 07:40:15 - [TEST_CASE][PASSED] - Test Cases/MakeAppointment: Test Cases/MakeAppointment
+
+2019-08-21 07:40:15 - [TEST_STEP][PASSED] - dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy"): null
+
+2019-08-21 07:40:15 - [TEST_STEP][PASSED] - now = LocalDateTime.now(): null
+
+2019-08-21 07:40:16 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center"), 1): All options with index in [1] are selected on object 'Object Repository/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'
+
+2019-08-21 07:40:16 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'
+
+2019-08-21 07:40:16 - [TEST_STEP][PASSED] - click(findTestObject("label_Apply for hospital readmission")): Object: 'Object Repository/label_Apply for hospital readmission' is clicked on
+
+2019-08-21 07:40:16 - [MESSAGE][PASSED] - Object: 'Object Repository/label_Apply for hospital readmission' is clicked on
+
+2019-08-21 07:40:16 - [TEST_STEP][PASSED] - setText(findTestObject("input_Visit Date (Required)_visit_date"), dtf.format(now)): Text '21/08/2019' is set on object 'Object Repository/input_Visit Date (Required)_visit_date'
+
+2019-08-21 07:40:16 - [MESSAGE][PASSED] - Text '21/08/2019' is set on object 'Object Repository/input_Visit Date (Required)_visit_date'
+
+2019-08-21 07:40:16 - [TEST_STEP][PASSED] - setText(findTestObject("textarea_Comment_comment"), "Test"): Text 'Test' is set on object 'Object Repository/textarea_Comment_comment'
+
+2019-08-21 07:40:16 - [MESSAGE][PASSED] - Text 'Test' is set on object 'Object Repository/textarea_Comment_comment']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/VerifyMakeAppointmentSuccess" classname="Test Cases/VerifyMakeAppointmentSuccess" status="FAILED">
+         <failure type="FAILED" message="Test Cases/VerifyMakeAppointmentSuccess FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)
+"/>
+         <system-out><![CDATA[2019-08-21 07:40:16 - [TEST_CASE][FAILED] - Test Cases/VerifyMakeAppointmentSuccess: Test Cases/VerifyMakeAppointmentSuccess FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)
+
+
+2019-08-21 07:40:16 - [TEST_STEP][PASSED] - recent_url = getUrl(): Current window's url is: 'https://katalon-demo-cura.herokuapp.com/#appointment'
+
+2019-08-21 07:40:16 - [MESSAGE][PASSED] - Current window's url is: 'https://katalon-demo-cura.herokuapp.com/#appointment'
+
+2019-08-21 07:40:16 - [TEST_STEP][FAILED] - verifyMatch(recent_url, "https://katalon-demo-cura.herokuapp.com/appointment.php#summary", false): verifyMatch(recent_url, "https://katalon-demo-cura.herokuapp.com/appointment.php#summary", false) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)
+
+
+2019-08-21 07:40:16 - [MESSAGE][FAILED] - Unable to verify match between actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)
+)
+
+2019-08-21 07:40:16 - [MESSAGE][FAILED] - verifyMatch(recent_url, "https://katalon-demo-cura.herokuapp.com/appointment.php#summary", false) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-08-21 07:40:16 - [TEST_CASE][FAILED] - Test Cases/VerifyMakeAppointmentSuccess: Test Cases/VerifyMakeAppointmentSuccess FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-08-21 07:40:05 - [TEST_SUITE][FAILED] - TU2.MakeAppointment: Test Cases/VerifyMakeAppointmentSuccess FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-08-21 07:40:05 - [TEST_SUITE][FAILED] - TU2.MakeAppointment: Test Cases/VerifyMakeAppointmentSuccess FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'https://katalon-demo-cura.herokuapp.com/#appointment' and expected text 'https://katalon-demo-cura.herokuapp.com/appointment.php#summary' are not matched
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.doCall(VerifyMatchKeyword.groovy:57)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword$_verifyMatch_closure1.call(VerifyMatchKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.verifyMatch(VerifyMatchKeyword.groovy:60)
+	at com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword.execute(VerifyMatchKeyword.groovy:45)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyMatch(BuiltinKeywords.groovy:73)
+	at VerifyMakeAppointmentSuccess.run(VerifyMakeAppointmentSuccess:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566347997325.run(TempTestSuite1566347997325.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

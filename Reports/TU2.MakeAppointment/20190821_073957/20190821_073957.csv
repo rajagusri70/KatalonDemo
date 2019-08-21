@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TU2.MakeAppointment,Chrome 76.0.3809.100,,2019-08-21 07:40:05,2019-08-21 07:40:17,11.973s,FAILED
+,,,,,,
+Test Cases/Login,Chrome 76.0.3809.100,Login to the page,2019-08-21 07:40:05,2019-08-21 07:40:15,9.605s,PASSED
+openBrowser(urlLogin),Chrome 76.0.3809.100,,2019-08-21 07:40:06,2019-08-21 07:40:13,7.159s,PASSED
+maximizeWindow(),Chrome 76.0.3809.100,,2019-08-21 07:40:13,2019-08-21 07:40:14,1.139s,PASSED
+"setText(findTestObject(""input_Username_username""), username)",Chrome 76.0.3809.100,,2019-08-21 07:40:14,2019-08-21 07:40:14,0.148s,PASSED
+"setText(findTestObject(""input_Password_password""), password)",Chrome 76.0.3809.100,,2019-08-21 07:40:14,2019-08-21 07:40:14,0.137s,PASSED
+"click(findTestObject(""button_Login""))",Chrome 76.0.3809.100,,2019-08-21 07:40:14,2019-08-21 07:40:15,0.731s,PASSED
+,,,,,,
+Test Cases/MakeAppointment,Chrome 76.0.3809.100,,2019-08-21 07:40:15,2019-08-21 07:40:16,1.321s,PASSED
+"dtf = DateTimeFormatter.ofPattern(""dd/MM/yyyy"")",Chrome 76.0.3809.100,,2019-08-21 07:40:15,2019-08-21 07:40:15,0.020s,PASSED
+now = LocalDateTime.now(),Chrome 76.0.3809.100,,2019-08-21 07:40:15,2019-08-21 07:40:16,0.359s,PASSED
+"selectOptionByIndex(findTestObject(""select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center""), 1)",Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.273s,PASSED
+"click(findTestObject(""label_Apply for hospital readmission""))",Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.066s,PASSED
+"setText(findTestObject(""input_Visit Date (Required)_visit_date""), dtf.format(now))",Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.171s,PASSED
+"setText(findTestObject(""textarea_Comment_comment""), ""Test"")",Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.094s,PASSED
+,,,,,,
+Test Cases/VerifyMakeAppointmentSuccess,Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.189s,FAILED
+recent_url = getUrl(),Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.021s,PASSED
+"verifyMatch(recent_url, ""https://katalon-demo-cura.herokuapp.com/appointment.php#summary"", false)",Chrome 76.0.3809.100,,2019-08-21 07:40:16,2019-08-21 07:40:16,0.027s,FAILED

@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TU1.Login,Chrome 76.0.3809.100,,2019-08-21 07:37:38,2019-08-21 07:37:50,11.889s,PASSED
+,,,,,,
+Test Cases/Login,Chrome 76.0.3809.100,Login to the page,2019-08-21 07:37:38,2019-08-21 07:37:49,10.712s,PASSED
+openBrowser(urlLogin),Chrome 76.0.3809.100,,2019-08-21 07:37:39,2019-08-21 07:37:47,8.080s,PASSED
+maximizeWindow(),Chrome 76.0.3809.100,,2019-08-21 07:37:47,2019-08-21 07:37:48,1.145s,PASSED
+"setText(findTestObject(""input_Username_username""), username)",Chrome 76.0.3809.100,,2019-08-21 07:37:48,2019-08-21 07:37:48,0.272s,PASSED
+"setText(findTestObject(""input_Password_password""), password)",Chrome 76.0.3809.100,,2019-08-21 07:37:48,2019-08-21 07:37:48,0.155s,PASSED
+"click(findTestObject(""button_Login""))",Chrome 76.0.3809.100,,2019-08-21 07:37:48,2019-08-21 07:37:49,0.747s,PASSED
+,,,,,,
+Test Cases/VerifySetelahLogin,Chrome 76.0.3809.100,Verifikasi apakah Login berhasil,2019-08-21 07:37:49,2019-08-21 07:37:49,0.261s,PASSED
+recent_url = getUrl(),Chrome 76.0.3809.100,,2019-08-21 07:37:49,2019-08-21 07:37:49,0.016s,PASSED
+"verifyMatch(recent_url, ""https://katalon-demo-cura.herokuapp.com/#appointment"", false)",Chrome 76.0.3809.100,,2019-08-21 07:37:49,2019-08-21 07:37:49,0.053s,PASSED
